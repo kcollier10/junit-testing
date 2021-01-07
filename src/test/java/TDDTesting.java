@@ -13,16 +13,16 @@ public class TDDTesting {
         String input = "Codeup";
 
         assertEquals(name, input);
+        assertNotEquals(name, input);
     }
 
     @Test
     public void testIfArrayListsAreEqual() {
         List<String> languages = new ArrayList<>();
         List<String> moreLanguages = new ArrayList<>();
-        languages.add("english");
-        moreLanguages.add("spanish");
 
-        assertNotEquals(languages, moreLanguages);
+
+        assertNotSame(languages, moreLanguages);
     }
 
     @Test
